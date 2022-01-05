@@ -31,4 +31,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           email: icnaming@gmail.com
-          build_dir: build
+          build_dir: src/build
