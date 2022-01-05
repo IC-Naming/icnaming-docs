@@ -1,1 +1,0 @@
-icnaming-docs
