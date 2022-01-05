@@ -1,1 +1,1 @@
-# icnaming-docs
+# IC Naming Docs
