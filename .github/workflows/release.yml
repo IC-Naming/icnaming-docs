@@ -32,3 +32,4 @@ jobs:
         with:
           email: icnaming@gmail.com
           build_dir: src/build
+          cname: docs.icnaming.com
