@@ -20,6 +20,50 @@ For an example, you can type or click this link to your address bar to visit the
 
 NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the http:// or https:// in front of the domain name will need to be entered manually.
 
+## Show Cases
+
+| ICNaming                                                       | Description           |
+| -------------------------------------------------------------- | --------------------- |
+| [liquidicp.icp](https://liquidicp.icp)                         | Liquid ICP            |
+| [liquid-icp.icp](https://liquid-icp.icp)                       | Liquid ICP            |
+| [canistore.icp](https://canistore.icp)                         | Canistore             |
+| [ickoalas.icp](https://ickoalas.icp)                           | ICKoalas              |
+| [icturtles.icp](https://icturtles.icp)                         | ICTurtles, Galapagos  |
+| [icaliens.icp](https://icaliens.icp)                           | ICAliens, SOLD OUT!   |
+| [cetoswap.icp](https://cetoswap.icp)                           | CetoSwap              |
+| [icapps.icp](https://icapps.icp)                               | icApps                |
+| [icevent.icp](https://icevent.icp)                             | ICEvent               |
+| [icpxy.icp](https://icpxy.icp)                                 | ICPxy NFT             |
+| [dfinity-community.icp](https://dfinity-community.icp)         | DfinityCommunity.NFT  |
+| [dfinitycommunity.icp](https://dfinitycommunity.icp)           | DfinityCommunity.NFT  |
+| [icwave.icp](https://icwave.icp)                               | xbarlabs.icp, ICWave  |
+| [week-in-dfinity-news.icp](https://week-in-dfinity-news.icp)   | Week in Dfinity News  |
+| [weekindfinity.icp](https://weekindfinity.icp)                 | Week in Dfinity News  |
+| [weekindfinitynews.icp](https://weekindfinitynews.icp)         | Week in Dfinity News  |
+| [icpics.icp](https://icpics.icp)                               | ICPics                |
+| [dmail.icp](https://dmail.icp)                                 | Dmail                 |
+| [herbert.icp](https://herbert.icp)                             | herbert               |
+| [pulseicans.icp](https://pulseicans.icp)                       | Pulseicans            |
+| [dripland.icp](https://dripland.icp)                           | Drip.Land             |
+| [drip-land.icp](https://drip-land.icp)                         | Drip.Land             |
+| [avocadoresearch.icp](https://avocadoresearch.icp)             | Avocado Research      |
+| [avocado-research.icp](https://avocado-research.icp)           | Avocado Research      |
+| [icpdog.icp](https://icpdog.icp)                               | ICP.Dog, SOLD OUT     |
+| [icp-dog.icp](https://icp-dog.icp)                             | ICP.Dog, SOLD OUT     |
+| [dfinity-nuclear-sheep.icp](https://dfinity-nuclear-sheep.icp) | Dfinity Nuclear Sheep |
+| [dfinitynuclearsheep.icp](https://dfinitynuclearsheep.icp)     | Dfinity Nuclear Sheep |
+| [icpl-community.icp](https://icpl-community.icp)               | ICPL Community        |
+| [icplcommunity.icp](https://icplcommunity.icp)                 | ICPL Community        |
+| [aedile.icp](https://aedile.icp)                               | aedile                |
+| [dfinity-vietnam.icp](https://dfinity-vietnam.icp)             | Dfinity Việt Nam      |
+| [dfinityvietnam.icp](https://dfinityvietnam.icp)               | Dfinity Việt Nam      |
+| [icpswap.icp](https://icpswap.icp)                             | ICPSwap               |
+| [icp-swap.icp](https://icp-swap.icp)                           | ICPSwap               |
+| [icwhiskers.icp](https://icwhiskers.icp)                       | ICWhiskers, Metacats  |
+| [ic-whiskers.icp](https://ic-whiskers.icp)                     | ICWhiskers, Metacats  |
+| [icnaming.icp](https://icnaming.icp)                           | ICNaming              |
+
+
 ## FAQ
 
 ### How to bind my name with canister?
