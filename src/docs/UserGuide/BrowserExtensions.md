@@ -24,7 +24,7 @@ NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the htt
 
 | ICNaming                                                       | Description           |
 | -------------------------------------------------------------- | --------------------- |
-| [paul.icp](https://dstar.icp)                                  | Paul                  |
+| [paul.icp](https://paul.icp)                                   | Paul                  |
 | [dstar.icp](https://dstar.icp)                                 | Dstar                 |
 | [liquidicp.icp](https://liquidicp.icp)                         | Liquid ICP            |
 | [liquid-icp.icp](https://liquid-icp.icp)                       | Liquid ICP            |
