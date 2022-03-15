@@ -24,7 +24,8 @@ NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the htt
 
 | ICNaming                                                       | Description           |
 | -------------------------------------------------------------- | --------------------- |
-| [dstar.icp](https://dstar.icp)                         | Dstar            |
+| [paul.icp](https://dstar.icp)                                  | Paul                  |
+| [dstar.icp](https://dstar.icp)                                 | Dstar                 |
 | [liquidicp.icp](https://liquidicp.icp)                         | Liquid ICP            |
 | [liquid-icp.icp](https://liquid-icp.icp)                       | Liquid ICP            |
 | [canistore.icp](https://canistore.icp)                         | Canistore             |
@@ -43,7 +44,7 @@ NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the htt
 | [weekindfinitynews.icp](https://weekindfinitynews.icp)         | Week in Dfinity News  |
 | [icpics.icp](https://icpics.icp)                               | ICPics                |
 | [dmail.icp](https://dmail.icp)                                 | Dmail                 |
-| [herbert.icp](https://herbert.icp)                             | herbert               |
+| [herbert.icp](https://herbert.icp)                             | Herbert               |
 | [pulseicans.icp](https://pulseicans.icp)                       | Pulseicans            |
 | [dripland.icp](https://dripland.icp)                           | Drip.Land             |
 | [drip-land.icp](https://drip-land.icp)                         | Drip.Land             |
@@ -63,7 +64,6 @@ NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the htt
 | [icwhiskers.icp](https://icwhiskers.icp)                       | ICWhiskers, Metacats  |
 | [ic-whiskers.icp](https://ic-whiskers.icp)                     | ICWhiskers, Metacats  |
 | [icnaming.icp](https://icnaming.icp)                           | ICNaming              |
-
 
 ## FAQ
 
