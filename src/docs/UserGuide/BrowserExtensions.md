@@ -24,6 +24,11 @@ NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the htt
 
 | ICNaming                                                       | Description           |
 | -------------------------------------------------------------- | --------------------- |
+| [icnaming.icp](https://icnaming.icp)                           | ICNaming              |
+| [bob.icp](https://bob.icp)                                     | Bob                   |
+| [paulyoung.icp](https://paulyoung.icp)                         | Paul Young            |
+| [young.icp](https://young.icp)                                 | Paul Young            |
+| [codebase.icp](https://codebase.icp)                           | codebase              |
 | [paul.icp](https://paul.icp)                                   | Paul                  |
 | [dstar.icp](https://dstar.icp)                                 | Dstar                 |
 | [liquidicp.icp](https://liquidicp.icp)                         | Liquid ICP            |
@@ -63,7 +68,6 @@ NOTICE: Because .icp is not currently a DNS-recognized top-level domain, the htt
 | [icp-swap.icp](https://icp-swap.icp)                           | ICPSwap               |
 | [icwhiskers.icp](https://icwhiskers.icp)                       | ICWhiskers, Metacats  |
 | [ic-whiskers.icp](https://ic-whiskers.icp)                     | ICWhiskers, Metacats  |
-| [icnaming.icp](https://icnaming.icp)                           | ICNaming              |
 
 ## FAQ
 
