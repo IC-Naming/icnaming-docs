@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkicnaming_docs=self.webpackChunkicnaming_docs||[]).push([[791],{3769:function(n){n.exports=JSON.parse('{"plugin":{"name":"docusaurus-plugin-content-docs","id":"default"}}')}}]);
