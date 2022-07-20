@@ -1,11 +1,9 @@
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
-  - init: |
+  - command: |
       npm install docusaurus -g
       cd src
       npm install
-  - command: |
-      cd src
       npm run start
 ports:
   - port: 3000
