@@ -1,11 +1,12 @@
 # Learn more about this file at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: |
+      npm install docusaurus -g
       cd src
-      yarn
+      npm install
   - command: |
       cd src
-      yarn start
+      npm run start
 ports:
   - port: 3000
-    onOpen: open-preview
+    onOpen: open-browser
