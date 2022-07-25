@@ -16,35 +16,35 @@ service : {
     ) query;
   /// Get details of name
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   get_details : (text) -> (GetDetailsResponse) query;
   /// Get owner of name
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   get_owner : (text) -> (GetOwnerResponse) query;
   /// Get resolver
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   get_resolver : (text) -> (GetOwnerResponse) query;
   /// Get ttl of name
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   get_ttl : (text) -> (GetTtlResponse) query;
   /// Get owner and operators of name
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   get_users : (text) -> (GetUsersResponse) query;
   /// Set approval status of operator. Operator can be update info of subdomain.
   /// Returns true if success.
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   /// * `operator` - operator to be set.
   /// * `approved` - approval status of operator
   set_approval : (text, principal, bool) -> (BooleanActorResponse);
   /// Set full info of subdomain
   /// Returns true if success
   ///
-  /// * `name` - a name. e.g. `hello.icp`
+  /// * `name` - a name. e.g. `hello.ic`
   /// * `ttl` - ttl of name
   /// * `resolver` - resolver of name
   set_record : (text, nat64, principal) -> (BooleanActorResponse);
@@ -52,7 +52,7 @@ service : {
   /// Returns details of the new registry
   ///
   /// * `label` - label of subdomain. e.g. `www`
-  /// * `parent_name` - parent name of subdomain. e.g. `hello.icp`
+  /// * `parent_name` - parent name of subdomain. e.g. `hello.ic`
   /// * `sub_owner` - owner of subdomain
   /// * `ttl` - ttl of subdomain
   /// * `resolver` - resolver of subdomain

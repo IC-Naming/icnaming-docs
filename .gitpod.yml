@@ -8,3 +8,8 @@ tasks:
 ports:
   - port: 3000
     onOpen: open-browser
+
+vscode:
+  extensions:
+    - yzhang.markdown-all-in-one
+    - esbenp.prettier-vscode

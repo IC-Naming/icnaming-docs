@@ -9,7 +9,7 @@ service : {
   /// Check if name is available.
   /// Returns true if name is available.
   ///
-  /// * `name` - name to check, e.g. "hello.icp"
+  /// * `name` - name to check, e.g. "hello.ic"
   available : (text) -> (BooleanActorResponse) query;
   /// Get details for a name.
   /// Returns details for a name.
@@ -19,7 +19,7 @@ service : {
   /// Get expiration date for a name.
   /// Returns expiration date.
   ///
-  /// * `name` - name to get, e.g. "hello.icp"
+  /// * `name` - name to get, e.g. "hello.ic"
   get_name_expires : (text) -> (GetNameExpiresActorResponse) query;
   /// Get names for a owner.
   /// Returns names for a owner.
@@ -35,14 +35,14 @@ service : {
   /// Register a name for a owner. This is private method for activity client.
   /// Returns true if name is registered successfully.
   ///
-  /// * `name` - name to register, e.g. "hello.icp"
+  /// * `name` - name to register, e.g. "hello.ic"
   /// * `owner` - owner to register the name for
   /// * `years` - number of years to register the name for
   register_for : (text, principal, nat64) -> (BooleanActorResponse);
   /// Register a name for a caller with a quota.
   /// Returns true if name is registered successfully.
   ///
-  /// * `name` - name to register, e.g. "hello.icp"
+  /// * `name` - name to register, e.g. "hello.ic"
   /// * `quota_type` - quota type to use
   register_with_quota : (text, QuotaType) -> (BooleanActorResponse);
 }
