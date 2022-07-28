@@ -1,54 +1,99 @@
 # Resolver Keys
 
+Actualy, you can use any key you want in a resolving record. This doc is just a reference for well-knoewed keys in public resolver.
 
+## Keys with Canister-Side Validation
 
-There are some keys that are used by PublicResolver to resolve names.
+There are some keys that will be validated on the canister side when setting a resolving record.
 
-- token.eth
-- token.btc
-- token.icp
-- token.ltc
-- canister.icp
-- email
-- url
-- avatar
-- description
-- notice
-- keywords
-- com.twitter
-- com.github
+| Key            | Description                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------- |
+| token.eth      | ETH address                                                                                    |
+| token.btc      | BTC address                                                                                    |
+| token.icp      | Principal or AccountId for ICP. obsolete: split into two keys principal.icp and account_id.icp |
+| token.ltc      | LTC address                                                                                    |
+| canister.icp   | canister principal you want to redirect to when resolving this name as a web domain            |
+| principal.icp  | ICP Principal                                                                                  |
+| account_id.icp | ICP AccountId                                                                                  |
 
+## Keys without Canister-Side Validation
 
+These keys are not validated on the canister side when setting a resolving record, that means you can set any value in the record.
 
-// resolver keys
-pub const RESOLVER_KEY_ETH: &str = "token.eth";
-pub const RESOLVER_KEY_BTC: &str = "token.btc";
-// obsolete: split into two keys RESOLVER_KEY_ICP_PRINCIPAL and RESOLVER_KEY_ICP_ACCOUNT_ID
-pub const RESOLVER_KEY_ICP: &str = "token.icp";
-pub const RESOLVER_KEY_LTC: &str = "token.ltc";
-pub const RESOLVER_KEY_ICP_CANISTER: &str = "canister.icp";
-pub const RESOLVER_KEY_ICP_PRINCIPAL: &str = "principal.icp";
-pub const RESOLVER_KEY_ICP_ACCOUNT_ID: &str = "account_id.icp";
-pub const RESOLVER_KEY_EMAIL: &str = "email";
-pub const RESOLVER_KEY_URL: &str = "url";
-pub const RESOLVER_KEY_AVATAR: &str = "avatar";
-pub const RESOLVER_KEY_DESCRIPTION: &str = "description";
-pub const RESOLVER_KEY_NOTICE: &str = "notice";
-pub const RESOLVER_KEY_KEYWORDS: &str = "keywords";
-pub const RESOLVER_KEY_LOCATION: &str = "location";
-pub const RESOLVER_KEY_DISPLAY_NAME: &str = "display_name";
-pub const RESOLVER_KEY_TWITTER: &str = "com.twitter";
-pub const RESOLVER_KEY_GITHUB: &str = "com.github";
-pub const RESOLVER_KEY_FACEBOOK: &str = "com.facebook";
-pub const RESOLVER_KEY_MEDIUM: &str = "com.medium";
-pub const RESOLVER_KEY_DISCORD: &str = "com.discord";
-pub const RESOLVER_KEY_TELEGRAM: &str = "com.telegram";
-pub const RESOLVER_KEY_INSTAGRAM: &str = "com.instagram";
-pub const RESOLVER_KEY_REDDIT: &str = "com.reddit";
-pub const RESOLVER_KEY_SETTING_REVERSE_RESOLUTION_PRINCIPAL: &str =
-"settings.reverse_resolution.principal";
+| Key                                   | Description                                              |
+| ------------------------------------- | -------------------------------------------------------- |
+| email                                 | Email (1)                                                |
+| url                                   | A url that you want to redirect when resolving this name |
+| avatar                                | Avatar url (1)                                           |
+| description                           | Description (1)                                          |
+| notice                                | Notice (1)                                               |
+| keywords                              | Keywords (1)                                             |
+| location                              | Location (1)                                             |
+| display_name                          | DisplayName (1)                                          |
+| com.twitter                           | Twitter url (1)                                          |
+| com.github                            | Github url (1)                                           |
+| com.facebook                          | Facebook url (1)                                         |
+| com.medium                            | Medium url (1)                                           |
+| com.discord                           | Discord url (1)                                          |
+| com.telegram                          | Telegram url (1)                                         |
+| com.instagram                         | Instagram url (1)                                        |
+| com.reddit                            | Reddit url (1)                                           |
+| com.dscvr                             | Dscvr url (1)                                            |
+| com.distrikt                          | Distrikt url (1)                                         |
+| com.relation                          | Relation url (1)                                         |
+| com.openchat                          | Openchat url (1)                                         |
+| settings.reverse_resolution.principal |                                                          |
 
-pub const RESOLVER_KEY_DSCVR: &str = "com.dscvr";
-pub const RESOLVER_KEY_DISTRIKT: &str = "com.distrikt";
-pub const RESOLVER_KEY_RELATION: &str = "com.relation";
-pub const RESOLVER_KEY_OPENCHAT: &str = "com.openchat";
+(1) The value of this key is display on your name.ic.dance profile page.
+
+## Other Keys
+
+Actually, you can use any key you want in a resolving record. There are some limitations:
+
+- Max length of value is 512 characters.
+- Max length of key is 64 characters.
+- Max count of resolving records in a name is 30.
+
+For exmaple, you can set a resolving record with key `phone` to "123456789" if you like.
+
+## Resolving Convention
+
+There are some rules for resolving a name to make sure every client can resolve the name as the same rule.
+
+### Resolving to Web Url
+
+As you know, a name can be resolved to a web url to make your visit the url in a web browser or some apps.
+
+[ICNaming browser extension](https://chrome.google.com/webstore/detail/ic-naming-extensions/oepbpdamkigabminkagecahfgdgbbodc) is one of the clients to enable users to visit the url by typing a name.
+
+To resolve a name to a web url, you can use the following keys:
+
+1. Resolving with key `url` and redirect to it, if empty, move next.
+2. Resolving with key `icp.canister` and redirect to `${icp.canister}.raw.ic0.app`, if empty, move next.
+3. Redirect to `https://app.icnaming.com`.
+
+### Resolving to ICP Ledger AccountId
+
+A name can be resolved to an ICP Ledger AccountId to enable user to transfer ICP to the account.
+
+To resolve a name to an ICP Ledger AccountId, you can use the following keys:
+
+1. Resolving with key `principal.icp` and use it as target accountId, if empty, move next.
+2. Resolving with key `account_id.icp` and use it as target accountId, if empty, move next.
+3. Failed to resolve.
+
+### Reverse Resolution Principal to Name
+
+Reverse resolution is a feature to reverse resolve a name from a principal.
+
+When user set a resolving record with key `settings.reverse_resolution.principal`, the name will be resolved to the principal.
+
+To set this value, you need to be the owner of the principal and name.
+
+If a user ownes multiple names, there can be only a resolveing record with key `settings.reverse_resolution.principal` among them.
+
+To reverse resolve a name from a principal, you can use `reverse_resolve_principal` method in `resolver` canister.
+
+For example, you can set a resolving record with key `settings.reverse_resolution.principal` to "my-principal" for name "hello.ic".
+
+Then, the result of `reverse_resolve_principal("my-principal")` will be "hello.ic".

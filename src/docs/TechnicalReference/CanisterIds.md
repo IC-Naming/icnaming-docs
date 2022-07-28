@@ -1,29 +1,27 @@
 # Canister IDs
 
-## Test Net
+## .ic Name
+
+## Main Net
 
 ```json
 {
   "registry": {
-    "ic": "cxnwn-diaaa-aaaag-aabaq-cai"
+    "ic": "f542z-iqaaa-aaaam-aafnq-cai"
   },
   "registrar": {
-    "ic": "onof3-pyaaa-aaaal-qac6a-cai"
+    "ic": "ft6xr-taaaa-aaaam-aafmq-cai"
   },
   "resolver": {
-    "ic": "okpdp-caaaa-aaaal-qac6q-cai"
+    "ic": "fi3lu-jyaaa-aaaam-aafoa-cai"
   },
   "favorites": {
-    "ic": "oyjuw-oqaaa-aaaal-qac5q-cai"
-  },
-  "icnaming_ledger": {
-    "ic": "ra2t7-3aaaa-aaaaj-aahzq-cai"
-  },
-  "registrar_control_gateway": {
-    "ic": "j6dzz-gaaaa-aaaak-aab3q-cai"
+    "ic": "fu7rf-6yaaa-aaaam-aafma-cai"
   }
 }
 ```
+
+## .icp Name
 
 ## Main Net
 
@@ -43,9 +41,6 @@
   },
   "icnaming_ledger": {
     "ic": "ceilt-sqaaa-aaaam-aacca-cai"
-  },
-  "registrar_control_gateway": {
-    "ic": "gjzpj-bqaaa-aaaam-aacya-cai"
   }
 }
 ```
